@@ -1,0 +1,721 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <style type="text/css">
+    /* Client-specific Styles */
+    #outlook a {
+      padding: 0;
+    }
+
+    /* Force Outlook to provide a "view in browser" menu link. */
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+    .ExternalClass {
+      width: 100%;
+    }
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+    #backgroundTable {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      line-height: 100% !important;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    .image_fix {
+      display: block;
+    }
+
+    p {
+      margin: 0px 0px !important;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    /*a {color: #e95353;text-decoration: none;text-decoration:none!important;}*/
+    /*STYLES*/
+    table[class=full] {
+      width: 100%;
+      clear: both;
+    }
+
+    table.promo {}
+
+    table.promoTwo {}
+
+    /*################################################*/
+    /*IPAD STYLES*/
+    /*################################################*/
+    @media only screen and (max-width: 640px) {
+
+      a[href^="tel"],
+      a[href^="sms"] {
+        text-decoration: none;
+        color: #ffffff;
+        /* or whatever your want */
+        pointer-events: none;
+        cursor: default;
+      }
+
+      .mobile_link a[href^="tel"],
+      .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: #ffffff !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+
+      table[class=devicewidth] {
+        width: 440px !important;
+        text-align: left !important;
+      }
+
+      table[class=devicewidthinner] {
+        width: 400px !important;
+        text-align: center !important;
+      }
+
+      table[class="halfDevice"] {
+        width: 100% !important;
+        float: none !important;
+      }
+
+      .header table[class="halfDevice"] td {
+        text-align: center !important;
+      }
+
+      .header table[class="halfDevice"] td img {
+        margin-bottom: 10px;
+      }
+
+      img[class="fullwidth"] {
+        width: 100% !important;
+        height: auto;
+      }
+
+      img[class="edc"] {
+        width: 65% !important;
+        height: auto;
+      }
+
+      table.social {
+        margin-top: 10px !important;
+        float: none !important;
+      }
+
+      table.social td {
+        text-align: left !important;
+      }
+    }
+
+    /*##############################################*/
+    /*IPHONE STYLES*/
+    /*##############################################*/
+    @media only screen and (max-width: 480px) {
+
+      a[href^="tel"],
+      a[href^="sms"] {
+        text-decoration: none;
+        color: #ffffff;
+        /* or whatever your want */
+        pointer-events: none;
+        cursor: default;
+      }
+
+      .mobile_link a[href^="tel"],
+      .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: #ffffff !important;
+        pointer-events: auto;
+        cursor: default;
+      }
+
+      table[class=devicewidth] {
+        width: 280px !important;
+      }
+
+      table[class=devicewidthinner] {
+        width: 260px !important;
+        text-align: center !important;
+      }
+
+      table[class=devicewidthinner] td {
+        width: 260px !important;
+        /*text-align: center!important;*/
+      }
+
+      table[class="halfDevice"] {
+        width: 280px !important;
+        float: none !important;
+        /*margin-left: 30px!important;*/
+      }
+
+      .header table[class="halfDevice"] td img {
+        margin-bottom: 3px !important;
+      }
+
+      td[class="header"] {
+        border-top: #eeb111 8px solid !important;
+      }
+
+      img[class="fullwidth"] {
+        width: 100% !important;
+        height: auto;
+      }
+
+      img[class="edc"] {
+        width: 65% !important;
+        height: auto;
+      }
+
+      a.shrink {
+        font-size: 16px !important;
+      }
+
+      .halfDevice p.headline {
+        font-size: 28px !important;
+        padding-bottom: 5px !important;
+        line-height: 30px !important;
+      }
+
+      table.productImg {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+      }
+
+      tr td.signIn {
+        text-align: center !important;
+      }
+
+      table.bulletTable td {
+        width: 10px !important;
+      }
+
+      table.promo td {
+        padding: 2px !important;
+      }
+
+      table.CTA a {
+        line-height: 22px !important;
+      }
+
+      span[id=switcher] {
+        display: block;
+        background-image: url(../WhirlpoolConfEmail/320_edc_lowes.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        height: 85px !important;
+        width: 320px !important;
+      }
+
+      img[id=houdini] {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block">
+    <!-- start of header -->
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#f6f4f5" st-sortable="header"
+      id="backgroundTable">
+
+      <tr>
+        <td align="center">
+          <table width="600" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+
+            <tr>
+              <td valign="middle" align="center" st-content="preheader"
+                style="font-family: Helvetica, arial, sans-serif; font-size: 10px;color: #545248; padding: 10px;">
+                <p style=" font-family:Arial, Helvetica, sans-serif; color: #666666; font-size: 12px">Thank you for your
+                  purchase.&nbsp;&nbsp;|&nbsp; <a style="color:#eeb111;" name="HTML_CLICK_TO_VIEW" href="#SPCLICKTOVIEW"
+                    xt="SPCLICKTOVIEW" target="_new">View Online</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#ffffff" style="border-top: #eeb111 15px solid; padding: 20px;" class="header">
+                <table cellspacing="0" cellpadding="0" border="0" align="left" class="halfDevice">
+
+                  <!-- <tr>
+                    <td><img name="WHR_EveryDayCare.jpg" src="WHR_EveryDayCare.jpg" width="243" height="38" alt=""
+                        contentid="576d9f60-1585491c966-ce240116a00f91fcaa71fbe5df141a8a" xt="SPIMAGE"
+                        spname="WHR_EveryDayCare.jpg" /></td>
+                  </tr> -->
+
+                  <tr>
+                    <td><img name="WHR_EveryDayCare.jpg" src="https://pod1.ibmmarketingcloud.com/servlet/UserContentServlet?cache=true&CONTENT_ID=576d9f60-1585491c966-ce240116a00f91fcaa71fbe5df141a8a" width="243" height="38" alt=""
+                        contentid="576d9f60-1585491c966-ce240116a00f91fcaa71fbe5df141a8a" xt="SPIMAGE"
+                        spname="WHR_EveryDayCare.jpg" /></td>
+                  </tr>
+
+                </table>
+                <table width="20%" cellspacing="0" cellpadding="0" border="0" align="right" class="halfDevice">
+
+                  <!-- <tr>
+                    <td style="text-align: right"><img name="WhirlpoolBRAND-R-2017Logo.jpg"
+                        contentid="29ecaa98-15c6518aba4-c2a8af96738cc20073a7254c07aedd78" xt="SPIMAGE"
+                        src="WhirlpoolBRAND-R-2017Logo.jpg" width="99" height="39" alt="" /></td>
+                  </tr> -->
+                  <tr>
+                    <td style="text-align: right"><img name="WhirlpoolBRAND-R-2017Logo.jpg"
+                        contentid="29ecaa98-15c6518aba4-c2a8af96738cc20073a7254c07aedd78" xt="SPIMAGE"
+                        src="https://pod1.ibmmarketingcloud.com/servlet/UserContentServlet?cache=true&CONTENT_ID=29ecaa98-15c6518aba4-c2a8af96738cc20073a7254c07aedd78" width="99" height="39" alt="" /></td>
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td height="50" style="background-color:#eeb111;">
+                <table width="550" cellspacing="0" cellpadding="0" border="0" align="center" class="devicewidthinner">
+
+                  <tr>
+
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#FFFFFF" height="15"></td>
+            </tr>
+            <tr bgcolor="#ffffff">
+              <td>
+                <table width="550" cellspacing="0" cellpadding="0" border="0" align="center" class="devicewidthinner">
+                  <!-- content -->
+
+                  <tr>
+                    <td>
+                      <table width="550" cellspacing="0" cellpadding="0" border="0" align="left"
+                        class="devicewidthinner">
+                        <!-- image -->
+
+                        <tr>
+                          <td align="left"
+                            style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color:#5F5F59; line-height: 25px;">
+                            Thank you for purchasing a genuine Whirlpool&reg; service plan for your %%PRODUCT_NAME%%.
+                            The details of your purchase can be found below, please keep this email for your
+                            records. <p>&nbsp;</p>
+                          </td>
+                        </tr>
+
+                        <!-- <tr>
+                          <td align="left"
+                            style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color:#5F5F59; line-height: 25px;">
+                            Product Name: %%PRODUCT_NAME%%<br />
+                            Product Model: %%PRODUCT_MODEL%%<br />
+                            Service Plan: %%SERVICE_PLAN%%<br />
+                            Price: $%%SERVICE_PLAN_PRICE%%<br />
+                            Effective Date: %%SERVICE_PLAN_EFFECTIVE_DATE%%<br />
+                            End Date: %%SERVICE_PLAN_END_DATE%%<br />
+                            Order Number: %%SERVICE_PLAN_ORDER_NUMBER%%<br /><br />
+
+                          </td>
+                        </tr> -->
+                        <tr>
+                          <td
+                            style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;background-color:#ffffff;padding:5px 10px 0 10px;"
+                            width="100%">
+                            <table align="center" bgcolor="#ffffff" width="100%" cellspacing="0" cellpadding="0">
+
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:0px;padding-right:5px;"
+                                  valign="top" width="50%"><strong>Order Number:</strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-right:5px;"
+                                  valign="top">%%order_number%%</td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:0px;padding-right:5px;"
+                                  valign="top"><strong>Order Date:</strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-right:5px;"
+                                  valign="top">%%order_date%%</td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:0px;padding-right:5px;"
+                                  valign="top"><strong>Name: </strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-right:5px;"
+                                  valign="top">%%first_name%%&nbsp;%%last_name%%</td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:0px;padding-right:5px;"
+                                  valign="top"><strong>Billing Address:</strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-right:5px;"
+                                  valign="top">
+                                  %%billing_address_street1%%&nbsp;%%billing_address_street2%%<br />
+                                  %%billing_address_city%%,&nbsp;%%billing_address_state%%,&nbsp;%%billing_address_zip%%
+                                </td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:0px;padding-right:5px;"
+                                  valign="top"><strong>Shipping Address:</strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-right:5px;"
+                                  valign="top">
+                                  %%shipping_address_street1%%&nbsp;%%shipping_address_street2%%<br />
+                                  %%shipping_address_city%%,&nbsp; %%shipping_address_state%%,&nbsp;
+                                  %%shipping_address_zip%%</td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:0px;padding-right:5px;"
+                                  valign="top"><strong>Payment Method:</strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-right:5px;"
+                                  valign="top">%%payment_method%%</td>
+
+                              </tr>
+                              <tr>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:right;" valign="top">
+                                  &nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:left;"
+                                  valign="top">&nbsp;</td>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:right;"
+                                  valign="top">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:right;" valign="top">
+                                  &nbsp;</td>
+                              </tr>
+
+                            </table>
+                            <table align="center" bgcolor="#ffffff" width="100%" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td width="40%"
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:0px;padding-right:5px;"
+                                  valign="top"><strong>Product</strong></td>
+                                <td width="20%"
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:center;padding-left:5px;padding-right:5px;"
+                                  valign="top"><strong>Quantity</strong></td>
+                                <td width="20%"
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:center;padding-left:5px;padding-right:5px;"
+                                  valign="top"><strong>Item Price</strong></td>
+                                <td width="20%"
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:right;padding-left:5px;"
+                                  valign="top"><strong>Total</strong></td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:0px;padding-right:5px;"
+                                  valign="top">%%purchase_name_1%%<br />&nbsp;&nbsp;%%purchase_sku_1%%</td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:center;padding-left:5px;padding-right:5px;"
+                                  valign="top">%%purchase_qt_1%%
+                                </td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:center;padding-left:5px;padding-right:5px;"
+                                  valign="top">$%%format(purchase_itemprice_1, &quot;#,###.00&quot;)%%</td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:right;padding-left:5px;"
+                                  valign="top">$%%format(purchase_totalprice_1, &quot;#,###.00&quot;)%%</td>
+                              </tr>
+
+                              <tr>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:right;" valign="top">
+                                  &nbsp;</td>
+
+                              <tr>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:left;"
+                                  valign="top">&nbsp;</td>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:left;"
+                                  valign="top">&nbsp;</td>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:left;"
+                                  valign="top">&nbsp;</td>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:right;"
+                                  valign="top">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:right;" valign="top">
+                                  &nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:center;padding-left:5px;padding-right:5px;"
+                                  valign="top">&nbsp;
+                                </td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:5px;padding-right:5px;"
+                                  valign="top">&nbsp;</td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:10px;padding-right:5px;"
+                                  valign="top"><strong>Subtotal:</strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:right;padding-left:5px;padding-right:5px;"
+                                  valign="top">$%%format(order_subtotal, &quot;#,###.00&quot;)%%</td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:center;padding-left:5px;padding-right:5px;"
+                                  valign="top">&nbsp;
+                                </td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:5px;padding-right:5px;"
+                                  valign="top">&nbsp;</td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:10px;padding-right:5px;"
+                                  valign="top"><strong>Shipping:</strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:right;padding-left:5px;padding-right:5px;"
+                                  valign="top">$%%format(order_shipping, &quot;#,##0.00&quot;)%%</td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:center;padding-left:5px;padding-right:5px;"
+                                  valign="top">&nbsp;
+                                </td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:5px;padding-right:5px;"
+                                  valign="top">&nbsp;</td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:10px;padding-right:5px;"
+                                  valign="top"><strong>Tax:</strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:right;padding-left:5px;padding-right:5px;"
+                                  valign="top">$%%format(order_tax, &quot;#,##0.00&quot;)%%</td>
+                              </tr>
+                              <tr>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:center;padding-left:5px;padding-right:5px;"
+                                  valign="top">&nbsp;
+                                </td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:5px;padding-right:5px;"
+                                  valign="top">&nbsp;</td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:left;padding-left:10px;padding-right:5px;"
+                                  valign="top"><strong>Total:</strong></td>
+                                <td
+                                  style="font-family:sans-serif; font-size:12px;line-height:22px;color:#000000;text-align:right;padding-left:5px;padding-right:5px;"
+                                  valign="top"><strong>$%%format(order_total, &quot;#,###.00&quot;)%%</strong>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:right;" valign="top">
+                                  &nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:left;"
+                                  valign="top">&nbsp;</td>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:left;"
+                                  valign="top">&nbsp;</td>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:left;"
+                                  valign="top">&nbsp;</td>
+                                <td height="1"
+                                  style="font-size:1px;line-height:1px;background-color:#d3d3d3;text-align:right;"
+                                  valign="top">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:left;" valign="top">
+                                  &nbsp;</td>
+                                <td height="10" style="font-size:10px;line-height:10px;text-align:right;" valign="top">
+                                  &nbsp;</td>
+                              </tr>
+
+
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left"
+                            style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color:#5F5F59; line-height: 25px;">
+
+
+                            For questions on your service plan, or to request service, please call Whirlpool Service
+                            Plans at 866-265-0028 or visit us online at <a xt="SPCLICK" name="serviceplans"
+                              style="color:#eeb111; text-decoration:none;"
+                              href="https://serviceplans.whirlpool.com">serviceplans.whirlpool.com</a>.<br />
+                            <br />
+                            <i>Charges will appear on your billing statement as "Registria - Whirlpool Service
+                              Plans".</i>
+                            <br />
+                            <br />
+
+                            Find everything you need to know about your new product by checking out helpful tools and
+                            information on our <a xt="SPCLICK" style="color:#eeb111; text-decoration:none;"
+                              href="https://www.whirlpool.com/owners.html" name="www_whirlpool_com_owners__utm_">Owners
+                              Homepage</a>.<br />
+                            <br />
+                            Thanks for choosing Whirlpool brand. <br /></td>
+                        </tr>
+
+
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="25"></td>
+                  </tr>
+                  <!-- End of content -->
+
+                </table>
+              </td>
+            </tr>
+            <tr bgcolor="#ffffff" style="border-top: solid 3px #eeb111;">
+              <td height="20"></td>
+            </tr>
+            <tr>
+              <td bgcolor="#ffffff" style="padding: 25px;">
+                <table width="250" cellspacing="0" cellpadding="0" border="0" align="left" class="halfDevice">
+
+                  <tr>
+                    <td
+                      style="color:#eeb111; font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 24px; line-height: 24px; text-align: left;  ">
+                      #EveryDayCare <br />
+                      <a xt="SPCLICK" target="_blank" href="https://www.whirlpool.com/everydaycare.html"
+                        style="text-decoration: none; font-weight: normal; font-size: 14px; color:#eeb111; white-space:nowrap;"
+                        class="shrink" name="www_whirlpool_com_everydaycare">www.whirlpool.com/everydaycare</a></td>
+                  </tr>
+
+                </table>
+                <table width="275" cellspacing="0" cellpadding="0" border="0" align="right" style="margin-top: -5px;"
+                  class="social halfDevice">
+
+                  <tr>
+                    <td style="text-align:right"><a xt="SPCLICK" target="_blank"
+                        href="https://www.facebook.com/whirlpoolusa" name="www_facebook_com_whirlpoolusa"><img
+                          name="WHR_FB.png" src="WHR_FB.png" width="37" height="30" alt=""
+                          contentid="576d9f60-1585491c91c-ce240116a00f91fcaa71fbe5df141a8a" xt="SPIMAGE"
+                          spname="WHR_FB.png" /></a> <a xt="SPCLICK" target="_blank"
+                        href="https://www.youtube.com/user/whirlpoolusa?sub_confirmation=1"
+                        name="www_youtube_com_user_whirlpool"><img name="WHR_YT.png" src="WHR_YT.png" width="37"
+                          height="30" alt="" contentid="576d9f60-1585491c997-ce240116a00f91fcaa71fbe5df141a8a"
+                          xt="SPIMAGE" spname="WHR_YT.png" /></a> <a xt="SPCLICK" target="_blank"
+                        href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=whirlpoolusa"
+                        name="twitter_com_intent_follow_sour"><img name="WHR_Twitter.png" src="WHR_Twitter.png"
+                          width="37" height="30" alt=""
+                          contentid="576d9f60-1585491c945-ce240116a00f91fcaa71fbe5df141a8a" xt="SPIMAGE"
+                          spname="WHR_Twitter.png" /></a> </td>
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#f6f4f5" style="padding: 25px 0 50px;">
+                <table width="550" cellspacing="0" cellpadding="0" border="0" align="center" class="devicewidthinner">
+
+                  <tr>
+                    <td
+                      style="color: #6d5d52; font-family: Helvetica, Arial, sans-serif; font-size: 9px; line-height: 13px; text-align: left; padding: 5px 0;">
+                      <p style=" font-family:Arial, Helvetica, sans-serif;  color: #666666; font-size: 9px;">If you do
+                        not wish to receive special offers, promotions and other email marketing communications from
+                        Whirlpool brand, please <a
+                          href="https://preferences-whirlpool.registria.com/whirlpool_preferences?eml=%%Email%%&cid=5380"
+                          xt="SPCLICKSTREAM" style="color:#eeb111;" name="HTML_preference_link">click here</a>. To view
+                        our Privacy Statement, <a xt="SPCLICK" style="color:#eeb111"
+                          href="http://www.whirlpoolcorp.com/privacy-statement/"
+                          name="www_whirlpoolcorp_com_privacy_">click here</a>.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="color: #6d5d52; font-family: Helvetica, Arial, sans-serif; font-size: 9px; line-height: 12.5px; text-align: left; padding: 5px 0;">
+                      <p style=" font-family:Arial, Helvetica, sans-serif; color: #666666; font-size: 9px;">
+                        &reg;/&trade; &copy; %%format(MAILING_SEND_DATE, "yyyy")%% Whirlpool Corporation. All Rights
+                        Reserved. All other trademarks are owned by their respective companies. Whirlpool Corporation
+                        2000 N. M-63 Benton Harbor, MI 49022-2692</p>
+                    </td>
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</body>
+
+</html>
